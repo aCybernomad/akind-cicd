@@ -1,1 +1,0 @@
-# akind-cicd

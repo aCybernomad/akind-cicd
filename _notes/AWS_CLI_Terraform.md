@@ -1,14 +1,43 @@
-- Vad ska oclif kunna göra
-- Hur funkar det med databas
-- Hur triggar vi Terraform/Ansible
+# Amazon CLI
 
-2 Delar
+### Installera Amazon CLI
 
-1. App
-2. Git push
+https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 
-Skriva terraform
+### AWS Iam
 
-tls cert
-secret
-github token
+- Skapa en role i Iam roles samt en user med admin-rättigheter (ej root-användare)
+- Skapa Access-nycklar under den nya användaren
+
+### Miljövariabler
+
+```bash
+export AWS_ACCESS_KEY_ID=publik
+export AWS_SECRET_ACCESS_KEY=secret
+```
+
+### Konfigurera miljövariabler i AWS-Config
+
+```bash
+$ aws configure
+
+AWS Access Key ID [****************VCM6]:
+AWS Secret Access Key [****************DpyD]:
+
+Skippa de två sista
+```
+
+<br>
+
+# Terraform
+
+### Kommandon
+
+```bash
+$ terraform init
+$ terragorm fmt
+$ terraform validate
+$ terraform apply
+```
+
+Glöm ej .gitignore

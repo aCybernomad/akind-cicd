@@ -12,18 +12,14 @@ https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 ### Miljövariabler
 
 ```bash
-export AWS_ACCESS_KEY_ID=publik
-export AWS_SECRET_ACCESS_KEY=secret
+Google
 ```
 
 ### Konfigurera miljövariabler i AWS-Config
 
 ```bash
 $ aws configure
-
-AWS Access Key ID [****************VCM6]:
-AWS Secret Access Key [****************DpyD]:
-
+Bara Det två första
 Skippa de två sista
 ```
 
